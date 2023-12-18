@@ -1,0 +1,42 @@
+.dropdown-toggle::after{
+    color: white;
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+    color: inherit;
+    overflow: hidden; 
+  }
+
+  .navbar-nav .nav-link::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff06b;
+    transition: width 0.3s ease;
+  }
+
+  .navbar-nav .nav-link:hover::before {
+    width: 100%;
+  }
+  .dropdown-menu {
+    max-width: 250px; /* İhtiyaca göre boyutu ayarlayabilirsiniz */
+    background-color: #007bff;
+   line-height: 40px;
+  }
+  .dropdown-item{
+    overflow: hidden;
+    color: white;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 15px;
+
+  }
+
+  .dropdown-item:hover {
+    background-color: #ffffff; /* Hover olduğunda arka plan rengi */
+    color: #ff8787; /* Hover olduğunda metin rengi */
+    margin-left: 2px;
+  }
