@@ -23,7 +23,7 @@
     width: 100%;
   }
   .dropdown-menu {
-    max-width: 250px; /* İhtiyaca göre boyutu ayarlayabilirsiniz */
+    max-width: 250px; 
     background-color: #007bff;
    line-height: 40px;
   }
