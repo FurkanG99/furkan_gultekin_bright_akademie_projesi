@@ -10,13 +10,13 @@ import Form from 'react-bootstrap/Form';
 function Header() {
   return (
     <>
-    <div class="bg"> </div>
+    <div class="bg"></div>
     <div class="bg bg2"></div>
     <div class="bg bg3"></div>
     
-     <Navbar expand="lg" className="bg-primary p-3" fixed='top'>
+     <Navbar expand="lg" className="bg-dark p-3" fixed='top'>
       <Container>
-        <Navbar.Brand href="/Pages/MainPage" className='text-info fs-4 '>BAU-<span className='text-warning fs-4'>Bright</span></Navbar.Brand>
+        <Navbar.Brand href="/" className='text-info fs-4 '>BAU-<span className='text-warning fs-4'>Bright</span></Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" className='text-white'/>
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -27,7 +27,7 @@ function Header() {
             <Nav.Link href="/Pages/InfoPage"className='text-white m-2 nav-item fs-5'>BAU Bright Nedir</Nav.Link>
             <Nav.Link href="/Pages/WhyPage"className='text-white m-2 nav-item fs-5'>Neden Katılmalıyım</Nav.Link>
             <Nav.Link href="#action2"className='text-white m-2 nav-item fs-5'>Yöntem</Nav.Link>
-            <Nav.Link href="#action2"className='text-white m-2 nav-item fs-5'>Süreç</Nav.Link>
+            <Nav.Link href="#action2"className='text-white m-2 nav-item fs-5'>İletişim</Nav.Link>
             <Nav.Link href="#action2"className='text-white m-2 nav-item fs-5'>Kadro</Nav.Link>
             <NavDropdown title={<span className="text-white fs-5">Eğitimler</span>} id="navbarScrollingDropdown" className='mt-2 me-5' style={{ minWidth: '150px' }} >
               <NavDropdown.Item href="#fullstack-programlama-egitimi">FullStack Programlama Eğitimi</NavDropdown.Item>

@@ -12,7 +12,7 @@ function App() {
     
       <Header />
       <Routes>
-        <Route path ='/Pages/MainPage' element ={<MainPage />} />
+        <Route path ='/' element ={<MainPage />} />
         <Route path ='/Pages/InfoPage' element={<InfoPage />} />
         <Route path='/Pages/WhyPage' element ={<WhyPage />} />
       </Routes>    
