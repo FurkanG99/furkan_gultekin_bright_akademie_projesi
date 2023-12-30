@@ -108,13 +108,10 @@ body {
   }
   .dropdown-menu {
     max-width: 250px; 
-<<<<<<< Updated upstream
     background-color: #212529;
-   line-height: 40px;
-=======
+    line-height: 40px;
     background-color: #221f1f;
     line-height: 40px;
->>>>>>> Stashed changes
   }
   .dropdown-item{
     overflow: hidden;
