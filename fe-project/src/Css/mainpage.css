@@ -2,3 +2,15 @@
     font-size: 70px;
     opacity: 0.8;
 }
+.main-page-div div{
+align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.main-page-div{
+    width: 50%;
+}

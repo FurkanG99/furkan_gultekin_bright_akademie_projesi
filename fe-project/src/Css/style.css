@@ -108,8 +108,13 @@ body {
   }
   .dropdown-menu {
     max-width: 250px; 
+<<<<<<< Updated upstream
     background-color: #212529;
    line-height: 40px;
+=======
+    background-color: #221f1f;
+    line-height: 40px;
+>>>>>>> Stashed changes
   }
   .dropdown-item{
     overflow: hidden;
@@ -120,7 +125,8 @@ body {
   }
 
   .dropdown-item:hover {
-    background-color: #ffffff; /* Hover olduğunda arka plan rengi */
+    background-color: #ffffff;
+     /* Hover olduğunda arka plan rengi */
     color: #ff8787; /* Hover olduğunda metin rengi */
     margin-left: 2px;
   }

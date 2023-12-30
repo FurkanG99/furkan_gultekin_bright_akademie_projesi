@@ -16,7 +16,11 @@ function Header() {
     
      <Navbar expand="lg" className="bg-dark p-3" fixed='top'>
       <Container>
+<<<<<<< Updated upstream
         <Navbar.Brand href="/" className='text-info fs-4 '>BAU-<span className='text-warning fs-4'>Bright</span></Navbar.Brand>
+=======
+        <Navbar.Brand href="/Pages/MainPage" className='text-info fs-4 nav-link nav-item'>BAU-<span className='text-warning fs-4 '>Bright</span></Navbar.Brand>
+>>>>>>> Stashed changes
         <Navbar.Toggle aria-controls="navbarScroll" className='text-white'/>
         <Navbar.Collapse id="navbarScroll">
           <Nav
