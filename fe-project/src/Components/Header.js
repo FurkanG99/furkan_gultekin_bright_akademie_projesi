@@ -24,7 +24,7 @@ function Header() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="/"className='text-white m-2 nav-item fs-5'>BAU Bright Nedir</Nav.Link>
+            <Nav.Link href="/Pages/InfoPage"className='text-white m-2 nav-item fs-5'>BAU Bright Nedir</Nav.Link>
             <Nav.Link href="/Pages/WhyPage"className='text-white m-2 nav-item fs-5'>Neden Katılmalıyım</Nav.Link>
             <Nav.Link href="#action2"className='text-white m-2 nav-item fs-5'>Yöntem</Nav.Link>
             <Nav.Link href="#action2"className='text-white m-2 nav-item fs-5'>İletişim</Nav.Link>
