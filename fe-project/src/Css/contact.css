@@ -1,0 +1,18 @@
+.contact-container{
+    margin-top: 100px;
+    width: 80vw;  
+    margin-left: 100px;
+}
+
+.contact-form .form-control{
+    padding: 15px 3px;
+    line-height: 1.5;
+    background-color: rgba(0, 0, 0, .2);
+    color: white;
+    border: 2px solid white;
+}
+
+.contact-form input.form-control{
+    margin-bottom: 15px;
+}
+

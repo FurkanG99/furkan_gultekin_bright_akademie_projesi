@@ -89,6 +89,7 @@ input:checked + label .description {
 
 .teacher-card[for="tc1"] {
     background-image: url('/Assets/img1.jpeg');
+    background-position: center;
 }
 .teacher-card[for="tc2"] {
     background-image: url('/Assets/img2.jpg');

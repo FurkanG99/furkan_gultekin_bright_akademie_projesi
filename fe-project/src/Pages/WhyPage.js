@@ -32,17 +32,21 @@ const Accordion = ({ data }) => {
 const WhyPage = () => {
   const data = [
     {
-      title: "One",
-      content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`
+      title: "6 Ay Uygulamalı Eğitim",
+      content: `Alanında uzman deneyimli eğiticilerimiz ile 6 ay sürecek eğitimimiz kapsamında öğrencilerimiz teknik eğitim ve kariyer eğitimi alacaklardır.
+      `
     },
     {
-      title: "Two",
-      content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`
+      title: "Proje",
+      content: `Alanında uzman deneyimli eğiticilerimiz ile 6 ay süren temel eğitim boyunca katılımcılarımız kazandıkları yetkinlikleri senaryo niteliğindeki projelerde geliştirirler. Eğitim süresi dışında ise ev ve grup projeleri üzerine çalışarak becerilerini pekiştirirler.
+      `
     },
     {
-      title: "Three",
-      content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`
-    }
+      title: "İş Hayatı",
+      content: `Eğitim ve proje süreçlerini tamamlayan BAU Bright mezunları, alanında profesyonel hizmet veren IK firmamız tarafından, bilişim alanında faaliyet gösteren firmalara yönlendirilerek iş hayatlarına başlarlar.
+      `
+    },
+    
   ];
 
   return <Accordion data={data} />;

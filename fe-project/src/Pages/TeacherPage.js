@@ -10,8 +10,7 @@ const TeacherPage = () => {
                 <div className="icon">1</div>
                 <div className="description">
                     <h4>Engin Niyazi Ergül</h4>
-                    <p>Winter has so much to offer -
-                     creative activities</p>
+                    <p>Fenerbahçeli genç yazılımcı öğretmen</p>
                 </div>
             </div>
         </label>
@@ -21,8 +20,7 @@ const TeacherPage = () => {
                 <div className="icon">2</div>
                 <div className="description">
                     <h4>Furkan Gültekin</h4>
-                    <p>Gets better every day -
-                     stay tuned</p>
+                    <p>Kral Hoca 20 yaşında öğrenci-öğretmen</p>
                 </div>
             </div>
         </label>
@@ -42,8 +40,7 @@ const TeacherPage = () => {
                 <div className="icon">4</div>
                 <div className="description">
                     <h4>Doğa elif Ünlü</h4>
-                    <p>Space engineering becomes
-                     more and more advanced</p>
+                    <p>iyi kral hoca şu şu şu akşsda asbdlab </p>
                 </div>
             </div>
         </label>
