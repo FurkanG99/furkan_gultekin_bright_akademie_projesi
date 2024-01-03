@@ -14,7 +14,7 @@ function Header() {
     <div class="bg bg2"></div>
     <div class="bg bg3"></div>
     
-     <Navbar expand="lg" className="bg-dark p-3" fixed='top'>
+     <Navbar expand="lg" className="bg-dark p-3 mainn-headerr" fixed='top'>
       <Container>
         <Navbar.Brand href="/" className='text-info fs-4 '>BAU-<span className='text-warning fs-4'>Bright</span></Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" className='text-white'/>
