@@ -1,3 +1,9 @@
+.sabitNav{
+    position:sticky;
+    top:0px;
+    left:0px;
+}
+
 .main-page-div h1{
     font-size: 70px;
     opacity: 0.8;

@@ -6,6 +6,7 @@ import MainPage from './Pages/MainPage';
 import WhyPage from './Pages/WhyPage';
 import TeacherPage from './Pages/TeacherPage';
 import ContactPage from './Pages/ContactPage';
+import FsCodePage from './Pages/FsCodePage';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path ='/Pages/InfoPage' element={<InfoPage />} />
         <Route path='/Pages/WhyPage' element ={<WhyPage />} />
         <Route path='/Pages/ContactPage' element = {<ContactPage />} />
+        <Route path='/Pages/FsCodePage' element = {<FsCodePage />} />
       </Routes>    
 
     </BrowserRouter>      
