@@ -7,7 +7,9 @@ import WhyPage from './Pages/WhyPage';
 import TeacherPage from './Pages/TeacherPage';
 import ContactPage from './Pages/ContactPage';
 import FsCodePage from './Pages/FsCodePage';
-
+import NetworkPage from './Pages/NetworkPage';
+import CloudPage from './Pages/CloudPage';
+import FulldataPage from './Pages/FulldataPage';
 
 function App() {
   return (
@@ -21,6 +23,9 @@ function App() {
         <Route path='/Pages/WhyPage' element ={<WhyPage />} />
         <Route path='/Pages/ContactPage' element = {<ContactPage />} />
         <Route path='/Pages/FsCodePage' element = {<FsCodePage />} />
+        <Route path='/Pages/NetworkPage' element = {<NetworkPage />} />
+        <Route path='/Pages/CloudPage' element = {<CloudPage />} />
+       <Route path='/Pages/FulldataPage' element = {<FulldataPage />} />
       </Routes>    
 
     </BrowserRouter>      

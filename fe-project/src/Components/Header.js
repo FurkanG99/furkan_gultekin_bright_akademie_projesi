@@ -14,7 +14,7 @@ function Header() {
     <div class="bg bg2"></div>
     <div class="bg bg3"></div>
     
-     <Navbar expand="lg" className="bg-dark p-3 mainn-headerr   ">
+     <Navbar expand="lg" className="bg-dark p-3 mainn-headerr">
       <Container>
         <Navbar.Brand href="/" className='text-info fs-4 '>BAU-<span className='text-warning fs-4'>Bright</span></Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" className='text-white'/>
@@ -30,14 +30,14 @@ function Header() {
             <Nav.Link href="/Pages/TeacherPage"className='text-white m-2 nav-item fs-5'>Kadro</Nav.Link>
             <NavDropdown title={<span className="text-white fs-5">Eğitimler</span>} id="navbarScrollingDropdown" className='mt-2 me-5' style={{ minWidth: '150px' }} >
               <NavDropdown.Item href="/Pages/FsCodePage">FullStack Programlama Eğitimi</NavDropdown.Item>
-              <NavDropdown.Item href="#network-sistem-ve-siber-guvenlik-uzmanlık-egitimi">
+              <NavDropdown.Item href="/Pages/NetworkPage">
               Network, Sistem ve <br></br> Siber Güvenlik Uzmanlık Eğitimi
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#bulut-bilisim-uzmanlık-egitimi">
+              <NavDropdown.Item href="/Pages/CloudPage">
               Bulut Bilişim Uzmanlık Eğitimi
               </NavDropdown.Item> 
-              <NavDropdown.Item href="#full-data-uzmanlık-egitimi">
+              <NavDropdown.Item href="/Pages/FulldataPage">
               Full Data Uzmanlık Eğitimi
               </NavDropdown.Item>
             </NavDropdown>

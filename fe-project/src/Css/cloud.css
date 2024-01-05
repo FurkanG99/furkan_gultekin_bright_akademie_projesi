@@ -1,0 +1,11 @@
+.container-header{
+    height: 500px !important;
+    background-color: #D2E3C8;
+    opacity: 0.9;
+    z-index: -1;
+}
+
+
+.main-div-text{
+    font-size: 17px;
+}

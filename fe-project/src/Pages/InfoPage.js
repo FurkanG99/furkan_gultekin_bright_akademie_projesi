@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const InfoPage = () => {
   return (
     
-    <div className='container-lg'>
+    <div className='container'>
           <div class="bg"> </div>
     <div class="bg bg2"></div>
     <div class="bg bg3"></div>

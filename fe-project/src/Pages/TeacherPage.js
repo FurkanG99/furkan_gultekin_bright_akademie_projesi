@@ -1,8 +1,9 @@
 import React from 'react'
 import css from '../Css/teacher.css'
+import { Container } from 'react-bootstrap'
 const TeacherPage = () => {
   return (
-    <div className="wrapper">
+    <Container className="wrapper">
     <div className="place">
         <input type="radio" name="slide" id="tc1" checked />
         <label htmlFor="tc1" className="teacher-card">
@@ -45,7 +46,7 @@ const TeacherPage = () => {
             </div>
         </label>
     </div>
-</div>
+</Container>
   )
 }
 
