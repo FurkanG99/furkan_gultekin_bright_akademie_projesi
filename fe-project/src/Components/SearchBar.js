@@ -1,4 +1,3 @@
-// SearchBar.js
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
@@ -27,9 +26,9 @@ const SearchBar = ({ posts, setSearchResults }) => {
     }
   };
 
-  const handleResultClick = (postId) => {
+  const handleResultClick = (pageId) => {
     // Sayfa değişikliği işlemi
-    navigate(`/Pages/InfoPage/${postId}`);
+    navigate(`/Pages/InfoPage/${pageId}`);
   };
 
   return (

@@ -25,12 +25,11 @@ function App() {
   }, []);
   return (
     <BrowserRouter>
-      <Header />
-      {/* <SearchBar posts={posts} setSearchResults={setSearchResults} /> */}
+      <Header posts={posts} setSearchResults={setSearchResults} />
       <Routes>
         <Route path='/Pages/TeacherPage' element={<TeacherPage />} />
         <Route path='/' element={<MainPage />} />
-        <Route path='/Pages/InfoPage' element={<InfoPage />} />
+        <Route path='/Pages/InfoPage/:pageId' element={<InfoPage />} />
         <Route path='/Pages/WhyPage' element={<WhyPage />} />
         <Route path='/Pages/ContactPage' element={<ContactPage />} />
         <Route path='/Pages/FsCodePage' element={<FsCodePage />} />

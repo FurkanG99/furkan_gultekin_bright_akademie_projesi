@@ -27,7 +27,7 @@ function Header() {
               navbarScroll
             >
              
-  <Nav.Link href="/Pages/InfoPage"className='text-white m-2 nav-item fs-5'>BAU Bright Nedir</Nav.Link>
+  <Nav.Link href="/Pages/InfoPage/${pageId}"className='text-white m-2 nav-item fs-5'>BAU Bright Nedir</Nav.Link>
             <Nav.Link href="/Pages/WhyPage"className='text-white m-2 nav-item fs-5'>Neden Katılmalıyım</Nav.Link>
             <Nav.Link href="/Pages/ContactPage"className='text-white m-2 nav-item fs-5'>İletişim</Nav.Link>
             <Nav.Link href="/Pages/TeacherPage"className='text-white m-2 nav-item fs-5'>Kadro</Nav.Link>
