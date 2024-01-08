@@ -2,6 +2,9 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const InfoPage = () => {
+  const pageId = {
+    id:1
+  }
   return (
     
     <div className='container'>
