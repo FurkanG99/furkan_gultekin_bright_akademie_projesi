@@ -27,6 +27,8 @@ const SearchBar = ({ posts, setSearchResults }) => {
   };
 
   const handleResultClick = (pageId) => {
+    // Burada sayfa yönlendirmesi yapılabilir veya başka bir işlem gerçekleştirilebilir.
+    console.log(`Clicked on post with ID ${pageId}`);
     // Sayfa değişikliği işlemi
     navigate(`/Pages/InfoPage/${pageId}`);
   };
