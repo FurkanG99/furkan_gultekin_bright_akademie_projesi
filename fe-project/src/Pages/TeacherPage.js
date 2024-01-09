@@ -1,53 +1,58 @@
-import React from 'react'
-import css from '../Css/teacher.css'
-import { Container } from 'react-bootstrap'
+// teacher.js
+
+import React, { useState } from 'react';
+import css from '../Css/teacher.css';
+import { Button, Container } from 'react-bootstrap';
+
 const TeacherPage = () => {
+  const [showCaption, setShowCaption] = useState(false);
+  const [selectedTeacher, setSelectedTeacher] = useState(1);
+
+  const teachers = [
+    { id: 1, name: 'Engin Niyazi Ergül', description: 'Fenerbahçeli genç yazılımcı öğretmen' },
+    { id: 2, name: 'Furkan Gültekin', description: 'Kral Hoca 20 yaşında öğrenci-öğretmen' },
+    { id: 3, name: 'Mustafa Kemal Atatürk', description: 'Baş Öğretmen' },
+    { id: 4, name: 'Doğa Elif Ünlü', description: 'İyi kral hoca şu şu şu akşsda asbdlab' },
+  ];
+
+  const handleTeacherChange = (teacherId) => {
+    setSelectedTeacher(teacherId);
+  };
+
+  const handleButtonClick = () => {
+    setShowCaption(!showCaption);
+  };
+
   return (
     <Container className="wrapper">
-    <div className="place">
-        <input type="radio" name="slide" id="tc1" checked />
-        <label htmlFor="tc1" className="teacher-card">
-            <div className="teacher">
-                <div className="icon">1</div>
+      <div className="place">
+        {teachers.map((teacher) => (
+          <div key={teacher.id}>
+            <input
+              type="radio"
+              name="slide"
+              id={`tc${teacher.id}`}
+              checked={selectedTeacher === teacher.id}
+              onChange={() => handleTeacherChange(teacher.id)}
+            />
+            <label htmlFor={`tc${teacher.id}`} className="teacher-card">
+              <div className="teacher">
+                <div className="icon">{teacher.id}</div>
                 <div className="description">
-                    <h4>Engin Niyazi Ergül</h4>
-                    <p>Fenerbahçeli genç yazılımcı öğretmen</p>
+                  <h4>{teacher.name}</h4>
+                  {/* <p>{showCaption && selectedTeacher === teacher.id ? teacher.description : ''}</p> */}
                 </div>
-            </div>
-        </label>
-        <input type="radio" name="slide" id="tc2" checked/>
-        <label htmlFor="tc2" className="teacher-card">
-            <div className="teacher">
-                <div className="icon">2</div>
-                <div className="description">
-                    <h4>Furkan Gültekin</h4>
-                    <p>Kral Hoca 20 yaşında öğrenci-öğretmen</p>
-                </div>
-            </div>
-        </label>
-        <input type="radio" name="slide" id="tc3" checked/>
-        <label htmlFor="tc3" className="teacher-card">
-            <div className="teacher">
-                <div className="icon">3</div>
-                <div className="description">
-                    <h4>Mustafa Kemal Atatürk</h4>
-                    <p>Baş Öğretmen</p>
-                </div>
-            </div>
-        </label>
-        <input type="radio" name="slide" id="tc4" checked/>
-        <label htmlFor="tc4" className="teacher-card">
-            <div className="teacher">
-                <div className="icon">4</div>
-                <div className="description">
-                    <h4>Doğa elif Ünlü</h4>
-                    <p>iyi kral hoca şu şu şu akşsda asbdlab </p>
-                </div>
-            </div>
-        </label>
-    </div>
-</Container>
-  )
-}
+              </div>
+              <div className={`overlay ${showCaption && selectedTeacher === teacher.id ? 'visible' : ''}`}>
+                <p>{teacher.description}</p>
+              </div>
+            </label>
+          </div>
+        ))}
+        <Button variant="outline-success" onClick={handleButtonClick} className='teacher-btn'>Açıklamayı Göster/Gizle</Button>
+      </div>
+    </Container>
+  );
+};
 
-export default TeacherPage
+export default TeacherPage;
