@@ -8,7 +8,6 @@ const AccordionItem = ({ title, content }) => {
     <div>
       <div className="title" onClick={() => setOpen(!open)}>
         <div className="arrow-wrapper">
-          <i className={open ? "fa fa-angle-down fa-rotate-180" : "fa fa-angle-down"}></i>
         </div>
         <span className="title-text">{title}</span>
       </div>
