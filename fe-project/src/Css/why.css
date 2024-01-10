@@ -20,7 +20,7 @@
    font-weight: lighter;
    position: relative;
    padding: 10px;
-   z-index: 2000;
+   z-index: 0;
    border-radius: 4px;
    margin-top: 2px;
    transition: all .2s ease-in;
@@ -30,15 +30,18 @@
  
  .title-text {
    margin-left: 10px;
+   z-index: 0;
  }
  
  .title:hover {
    cursor: pointer;
+   z-index: 0;
    background-color: rgba(0,0,0, .5);
  }
  
  .title:active {
    background-color: rgba(0, 0, 0, .55);
+   z-index: 0;
  }
  
  .content {
@@ -50,7 +53,7 @@
    font-size: 14px;
    text-align: center;
    position: relative;
-   z-index: 1000;
+   z-index: 0;
    margin-top: -30px;
    text-align: left;
    transition: all 200ms cubic-bezier(0.600, -0.280, 0.735, 0.045);

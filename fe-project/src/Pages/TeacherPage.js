@@ -1,4 +1,3 @@
-// teacher.js
 
 import React, { useState } from 'react';
 import css from '../Css/teacher.css';
@@ -9,10 +8,10 @@ const TeacherPage = () => {
   const [selectedTeacher, setSelectedTeacher] = useState(1);
 
   const teachers = [
-    { id: 1, name: 'Engin Niyazi Ergül', description: 'Fenerbahçeli genç yazılımcı öğretmen' },
-    { id: 2, name: 'Furkan Gültekin', description: 'Kral Hoca 20 yaşında öğrenci-öğretmen' },
-    { id: 3, name: 'Mustafa Kemal Atatürk', description: 'Baş Öğretmen' },
-    { id: 4, name: 'Doğa Elif Ünlü', description: 'İyi kral hoca şu şu şu akşsda asbdlab' },
+    { id: 1, name: 'Engin Niyazi Ergül', description: 'Fenerbahçeli genç yazılımcı  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet consectetur pretium. Donec ultricies ultricies purus, in cursus libero porttitor.' },
+    { id: 2, name: 'Furkan Gültekin', description: 'Kral Hoca 20 yaşında öğrenci-öğretmen Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet consectetur pretium. Donec ultricies ultricies purus, in cursus libero porttitor.' },
+    { id: 3, name: 'Mustafa Kemal Atatürk', description: 'Baş Öğretmen Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet consectetur pretium. Donec ultricies ultricies purus, in cursus libero porttitor.' },
+    { id: 4, name: 'Doğa Elif Ünlü', description: 'İyi kral hocaLorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent aliquet consectetur pretium. Donec ultricies ultricies purus, in cursus libero porttitor.' },
   ];
 
   const handleTeacherChange = (teacherId) => {

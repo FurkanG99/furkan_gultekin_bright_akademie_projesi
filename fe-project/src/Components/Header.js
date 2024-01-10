@@ -7,14 +7,18 @@ import Container from 'react-bootstrap/Container'
 import Button from 'react-bootstrap/esm/Button';
 import Form from 'react-bootstrap/Form';
 import Css from '../Css/style.css'
+import { Link } from 'react-router-dom';
+
+
 function Header() {
   return (
     <>
     <div class="bg"></div>
     <div class="bg bg2"></div>
-    <div class="bg bg3"></div>
-    
-     <Navbar expand="lg" className="bg-dark p-3 mainn-headerr">
+  <div class="bg bg3"></div>
+
+
+     <Navbar expand="lg" className="bg-dark mainn-headerr">
       <Container>
         <Navbar.Brand href="/" className='text-info fs-4 '>BAU-<span className='text-warning fs-4'>Bright</span></Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" className='text-white'/>
@@ -41,20 +45,11 @@ function Header() {
               Full Data Uzmanlık Eğitimi
               </NavDropdown.Item>
             </NavDropdown>
-
+            <button type="button" class="gradient_anim_btn"><Link to={'./Pages/ContactPage'} style={{ textDecoration :'none', color:'white' }}>Başvuru Yap</Link></button>
           </Nav>
-          <Form className="d-flex search_bar">
-            <Form.Control
-              type="search"
-              placeholder="Search"
-              className="me-2"
-              aria-label="Search"
-            />
-            <Button variant="outline-light">Search</Button>
-          </Form>
         </Navbar.Collapse>
       </Container>
-    </Navbar>
+      </Navbar>
     </>
   )
 }
