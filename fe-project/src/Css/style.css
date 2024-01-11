@@ -20,7 +20,7 @@ body {
   position:fixed;
   right:-50%;
   top:0;
-  z-index:-1;
+  z-index:-9999;
 }
 
 .bg2 {
@@ -146,14 +146,13 @@ body {
     }
   }
 
-  .gradient_anim_btn {
+  .gradient_anim_btn{
     color: white !important;
     text-decoration: none;
-    font-weight: 600;
-    font-size: 18px;
+    font-weight: bold;
+    font-size: 16px;
     padding: 15px;
-    margin-right: 10px;
-    border-radius: 0.7em;
+    border-radius: 14px;
     background: -webkit-linear-gradient(225deg, rgb(251, 175, 21), rgb(251, 21, 242),             
     rgb(21, 198, 251)) 0% 0% / 300% 300%;
     background-size: 200% auto;

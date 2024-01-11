@@ -3,25 +3,6 @@ import { Container ,Row , Col, Button } from 'react-bootstrap'
 import Css from '../Css/cloud.css'
 const FulldataPage = () => {
 
-        const handleDownloadPDF = async () => {
-            try {
-              const pdfUrl = '"C:\Users\furka\OneDrive\Belgeler\FullStackProgramlamaEgitimi.pdf"';
-        
-              const response = await fetch(pdfUrl);
-              const pdfBlob = await response.blob();
-        
-              const link = document.createElement('a');
-              link.href = URL.createObjectURL(pdfBlob);
-              link.download = "'C:\Users\furka\OneDrive\Belgeler\FullStackProgramlamaEgitimi.pdf'";
-        
-              document.body.appendChild(link);
-              link.click();
-        
-              document.body.removeChild(link);
-            } catch (error) {
-              console.error('PDF indirme hatası:', error);
-            }
-        };
 
   return (
  
@@ -44,7 +25,7 @@ const FulldataPage = () => {
             <Button variant="outline-success" size='lg' href='/Pages/ContactPage'>Başvuru Yap</Button>
             </Col>
             <Col lg='6'>
-            <Button variant="outline-success" size='lg' onClick={handleDownloadPDF}>PDF Dosyasını indir</Button>
+            <Button variant="outline-success" size='lg'>PDF Dosyasını indir</Button>
             </Col>
             </Row>
         </Col>

@@ -1,8 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Header from './Components/Header';
-import Particles from "react-tsparticles";
-import { loadFull } from "tsparticles";
-import css from './Css/style.css'; // Stil dosyanızı ekledim
+import css from './Css/style.css'; 
 import InfoPage from './Pages/InfoPage'
 import MainPage from './Pages/MainPage';
 import WhyPage from './Pages/WhyPage';
@@ -17,6 +15,7 @@ function App() {
 
   return (
     <div className="App">
+
         <BrowserRouter>
         <Header />
         <Routes>

@@ -13,9 +13,9 @@ import { Link } from 'react-router-dom';
 function Header() {
   return (
     <>
-    <div class="bg"></div>
-    <div class="bg bg2"></div>
-  <div class="bg bg3"></div>
+    <div className="bg"></div>
+    <div className="bg bg2"></div>
+  <div className="bg bg3"></div>
 
 
      <Navbar expand="lg" className="bg-dark mainn-headerr">
@@ -45,7 +45,7 @@ function Header() {
               Full Data Uzmanlık Eğitimi
               </NavDropdown.Item>
             </NavDropdown>
-            <button type="button" class="gradient_anim_btn"><Link to={'./Pages/ContactPage'} style={{ textDecoration :'none', color:'white' }}>Başvuru Yap</Link></button>
+            <button type="button" className="gradient_anim_btn"><Link to={'./Pages/ContactPage'} style={{ textDecoration :'none', color:'white' }}>Başvuru Yap</Link></button>
           </Nav>
         </Navbar.Collapse>
       </Container>
