@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import css from '../Css/teacher.css';
-import { Button, Container } from 'react-bootstrap';
+import { Button, Col, Container, Row } from 'react-bootstrap';
 
 const TeacherPage = () => {
   const [showCaption, setShowCaption] = useState(false);
@@ -23,10 +23,11 @@ const TeacherPage = () => {
   };
 
   return (
-    <Container className="wrapper">
-      <div className="place">
-        {teachers.map((teacher) => (
-          <div key={teacher.id}>
+    <Container fluid className="wrapper">
+    {teachers.map((teacher) => (
+      <Row key={teacher.id} className="mb-3">
+        <Col xs={12}>
+          <div className="place">
             <input
               type="radio"
               name="slide"
@@ -39,7 +40,6 @@ const TeacherPage = () => {
                 <div className="icon">{teacher.id}</div>
                 <div className="description">
                   <h4>{teacher.name}</h4>
-                  {/* <p>{showCaption && selectedTeacher === teacher.id ? teacher.description : ''}</p> */}
                 </div>
               </div>
               <div className={`overlay ${showCaption && selectedTeacher === teacher.id ? 'visible' : ''}`}>
@@ -47,11 +47,17 @@ const TeacherPage = () => {
               </div>
             </label>
           </div>
-        ))}
-        <Button variant="outline-success" onClick={handleButtonClick} className='teacher-btn'>Açıklamayı Göster/Gizle</Button>
-      </div>
-    </Container>
-  );
-};
+        </Col>
+      </Row>
+    ))}
+    <Row>
+      <Col xs={12}>
+        <Button variant="outline-success" onClick={handleButtonClick} className='teacher-btn'>
+          Açıklamayı Göster/Gizle
+        </Button>
+      </Col>
+    </Row>
+  </Container>
+  )}
 
 export default TeacherPage;

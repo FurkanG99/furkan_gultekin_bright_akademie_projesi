@@ -153,11 +153,12 @@ body {
     font-size: 16px;
     padding: 15px;
     border-radius: 14px;
-    background: -webkit-linear-gradient(225deg, rgb(251, 175, 21), rgb(251, 21, 242),             
-    rgb(21, 198, 251)) 0% 0% / 300% 300%;
+    background: -webkit-linear-gradient(225deg, rgb(60, 23, 43), rgb(99, 66, 98),             
+    rgb(71, 55, 72)) 0% 0% / 300% 300%;
     background-size: 200% auto;
     -webkit-animation: gradient_move 3s ease infinite;
     animation: gradient_move 3s ease infinite;
+    border: none;
   }
   
   
