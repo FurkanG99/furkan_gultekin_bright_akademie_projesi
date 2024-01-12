@@ -30,8 +30,8 @@ function Header() {
           >
             <Nav.Link href="/Pages/InfoPage"className='text-white m-2 nav-item fs-5'>BAU Bright Nedir</Nav.Link>
             <Nav.Link href="/Pages/WhyPage"className='text-white m-2 nav-item fs-5'>Neden Katılmalıyım</Nav.Link>
-            <Nav.Link href="/Pages/ContactPage"className='text-white m-2 nav-item fs-5'>İletişim</Nav.Link>
             <Nav.Link href="/Pages/TeacherPage"className='text-white m-2 nav-item fs-5'>Kadro</Nav.Link>
+            <Nav.Link href="/Pages/ContactPage"className='text-white m-2 nav-item fs-5'>İletişim</Nav.Link>
             <NavDropdown title={<span className="text-white fs-5">Eğitimler</span>} id="navbarScrollingDropdown" className='mt-2 me-5' style={{ minWidth: '150px' }} >
               <NavDropdown.Item href="/Pages/FsCodePage">FullStack Programlama Eğitimi</NavDropdown.Item>
               <NavDropdown.Item href="/Pages/NetworkPage">
