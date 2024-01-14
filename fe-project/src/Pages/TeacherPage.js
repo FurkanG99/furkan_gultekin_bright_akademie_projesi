@@ -2,6 +2,9 @@
 import React, { useState } from 'react';
 import css from '../Css/teacher.css';
 import { Button, Col, Container, Row } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
+import { icon } from '@fortawesome/fontawesome-svg-core';
 
 const TeacherPage = () => {
   const [showCaption, setShowCaption] = useState(false);
@@ -37,9 +40,13 @@ const TeacherPage = () => {
             />
             <label htmlFor={`tc${teacher.id}`} className="teacher-card">
               <div className="teacher">
-                <div className="icon">{teacher.id}</div>
                 <div className="description">
-                  <h4>{teacher.name}</h4>
+                  <h4>
+                    <span className="icon">
+                      <FontAwesomeIcon icon={faUser} />
+                    </span>
+                    {teacher.name}
+                  </h4>
                 </div>
               </div>
               <div className={`overlay ${showCaption && selectedTeacher === teacher.id ? 'visible' : ''}`}>
