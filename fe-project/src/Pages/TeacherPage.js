@@ -42,7 +42,7 @@ const TeacherPage = () => {
               <div className="teacher">
                 <div className="description">
                   <h4>
-                    <span className="icon">
+                    <span className="tc-icon">
                       <FontAwesomeIcon icon={faUser} />
                     </span>
                     {teacher.name}

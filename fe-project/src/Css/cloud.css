@@ -1,12 +1,15 @@
 .container-header{
     height: 500px !important;
-    background-color: #3e004d;
+    background-color: #4D4C7D;
     opacity: 0.7;
     z-index: -99;
-  
 }
 
+.container-header h1{
+    color: white;
+}
 
 .main-div-text{
     font-size: 17px;
+    color: white;
 }
